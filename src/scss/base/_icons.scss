@@ -1,0 +1,50 @@
+//Icons
+
+//universal button styling
+.btn {
+    display: inline-block;
+    background-color: $primary-colour;
+    color: $white-colour;
+    padding: 15px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+.facebookBtn:before{
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+.twitterBtn:before{
+  font-family: "FontAwesome";
+  content: "\f099"; /* add twitter icon */
+}
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+      border-color: #00ABE3;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+      border-color: #0094BC;
+}
