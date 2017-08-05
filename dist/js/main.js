@@ -1,0 +1,1 @@
+$(document).ready(function(){function n(){windowHeight=$(window).innerHeight(),$(".splashPage").css("height",windowHeight)}n(),$(window).resize(function(){n()}),$("#navMenuBtn").on("click",function(){$("#navMenu").toggleClass("isOpen")})});

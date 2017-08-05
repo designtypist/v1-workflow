@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 // npm install gulp-connect
 var connect = require('gulp-connect');
 
-gulp.task('js', function() {
+gulp.task('js', () => {
 	gulp.src('src/js/*.js')
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'));
@@ -30,46 +30,30 @@ gulp.task('css', () => {
     .pipe(gulp.dest('dist/css'));
 });
 
-//add in later to fix imports
-
-//gulp.task('styles', function () {
-  //gulp.src('_components/sass/**/*.scss')
-    /*.pipe(compass({
-      config_file: 'config.rb',
-      css: 'app/css',
-      sass: '_components/sass'
-    }))
-    .on('error', errorLog)
-    .pipe(gulp.dest('app/css'))
-    .pipe(livereload());
-});
-*/
-gulp.task('sass', function() {
-	gulp.src('src/scss/*.scss')
-		.pipe(sass({ includePaths : ['_/base/*.scss'] }).on('error', sass.logError))
+gulp.task('sass', () => {
+    //https://stackoverflow.com/questions/26228519/gulp-how-to-create-a-task-that-compiles-multiple-sass-files
+	gulp.src('src/scss/home.scss')
+		.pipe(sass().on('error', sass.logError))
 		.pipe(cleanCSS())
 		.pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('images', function() {
+gulp.task('images', () => {
 	gulp.src('src/images/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('copy', function() {
+gulp.task('copy', () => {
 	gulp.src('src/*.html')
 	.pipe(gulp.dest('dist'))
-});
-
-gulp.task('copyFonts', function() {
 	gulp.src('src/fonts/*')
 	.pipe(gulp.dest('dist/fonts'))
 	// add reload at the end of our tasks
 	.pipe(connect.reload());
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', () => {
 	livereload.listen();
 	gulp.watch('src/*.html', ['copy'])
 	gulp.watch('src/scss/*.scss', ['sass'])
@@ -77,7 +61,7 @@ gulp.task('watch', function() {
 });
 
 // start live-reload server
-gulp.task('connect', function() {
+gulp.task('connect', () => {
 	connect.server({
 		port: 8000,
 		root: 'dist/',
