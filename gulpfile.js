@@ -35,8 +35,10 @@ gulp.task('sass', () => {
 	gulp.src('src/scss/home.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(cleanCSS())
-		.pipe(gulp.dest('dist/css'));
+		.pipe(gulp.dest('dist/css'))
+        .pipe(livereload());
 });
+//.pipe(changed(config.app + 'assets/styles', {extension: '.css'}))
 
 gulp.task('images', () => {
 	gulp.src('src/images/*')
@@ -56,7 +58,7 @@ gulp.task('copy', () => {
 gulp.task('watch', () => {
 	livereload.listen();
 	gulp.watch('src/*.html', ['copy'])
-	gulp.watch('src/scss/*.scss', ['sass'])
+	gulp.watch('src/scss/**/*.scss', ['sass'])
 	gulp.watch('src/js/*.js', ['js']);
 });
 

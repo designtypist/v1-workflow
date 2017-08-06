@@ -40,6 +40,7 @@
             display: none;
         }
     }
+    /* hide navigation menu list for now
     aside#navMenu.isOpen{
         display: flex;
         flex: 0.1 0 auto;
@@ -99,7 +100,7 @@
             }
         }
     }
-	
+	*/
     //splash page styling
 	.splashPage{
 		display: flex;
@@ -120,6 +121,7 @@
 				
 				>ul{
 					display: flex;
+                    flex-wrap: wrap;
                     flex: 1 1 auto;
                     align-items: center;
 					height: 100%;
@@ -162,12 +164,12 @@
                                 
                             } 
                         }
-                        
                     }
+                    /* hide menu for now
                     #navMenuBtn{
                         flex-basis: auto;
                         margin-left: auto;
-
+                            
                         a{
                             display: flex;
                             align-items: center;
@@ -178,9 +180,18 @@
                             }
                         }
                     }
+                    */
 				}
+                
+                @media only screen  and (max-width : $break-mobile) {
+                    >ul{
+                        justify-content: center;
+                        .navList{
+                            margin: inherit;
+                        }
+                    }
+                }
 			}
-				
 			h1{
 				text-align: center;
 				position: absolute;
