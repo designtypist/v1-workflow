@@ -9,9 +9,13 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 		
 		<!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/reset.css" />
+        <!-- Vendor styling -->
+        <link rel="stylesheet" href="css/vendor/font-awesome/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="css/vendor/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="css/vendor/slick/slick-theme.css"/>
+        <!-- Main home styling -->
+        <link rel="stylesheet" href="css/home.css" />
     </head>
     <body>
         <div id="homeSection">
@@ -20,7 +24,7 @@
 					<nav>
 						<ul>
 							<li class="brandLogo">
-								<a href="#homeSection">
+								<a href="#">
 									<img src="images/designtypistLogo.png" alt="designtypist logo" />
 									<span>designtypist</span>
 								</a>
@@ -28,11 +32,15 @@
                             <li class="navList">
                                 <ul>
                                     <li>
+                                        <a href="#aboutSection" class="hvr-underline-reveal">About</a>
+                                    </li>
+                                    <li>
                                         <a href="#workSection" class="hvr-underline-reveal">Work</a>
                                     </li>
                                     <li>
                                         <a href="#contactSection" class="hvr-underline-reveal">Contact</a>
                                     </li>
+                                    
                                 </ul>
                             </li>
                             <!--
@@ -95,6 +103,8 @@
             </aside>
 -->
 		</div>
+        <div id="aboutSection">
+        </div>
 		<div id="workSection">
             <h3>work.</h3>
             <div class="workCatalog">
@@ -103,18 +113,26 @@
                     <div class="workBlockInfo">
                         <h4>Saint James Church</h4>
                         <p>Designing and leading a team to rejuvenate a church's online presence</p>
-                        <p class="projectRole">Project Leader, Web Developer, Designer, Photographer</p>
+                        <p class="projectRole">Project Leader, Web Designer, Photographer</p>
                         <a class="btn" href="http://saintjameswindsor.com/" target="_blank">Visit the website</a>
                     </div>
                 </div>
                 <div class="workBlock">
-                    <img src="images/willabees.png" alt="willabees image" />
+                        <img src="images/willabees.png" alt="willabees image" />
+                        <div class="workBlockInfo">
+                            <h4>Willabees</h4>
+                            <p>Designing and developing for a dress ecommerce website (Unfortunately, unfinished)</p>
+                            <p class="projectRole">Back-End Programmer, Web Designer</p>
+                            <a class="btn" href="https://php.scweb.ca/~jamsproject/willabeesproject/public/" target="_blank">Visit the website</a>
+                        </div>
+                </div>
+                <div class="workBlock">
+                    <img src="images/contactImage.jpg" alt="saint james windsor image" />
                     <div class="workBlockInfo">
-                        <h4>Willabees</h4>
-                        <p>Designing and developing for a  dress e-commerce website</p>
-                        <p class="projectRole">Back-End Programmer, Designer, Web Developer</p>
-                        <a class="btn" href="https://collegeprojects.ca/willabees/" target="_blank">Visit Storefront</a>
-                        <a class="btn" href="https://collegeprojects.ca/willabees/admin" target="_blank">Visit Admin Panel</a>
+                        <h4>Information Technology Club</h4>
+                        <p>Designed and developed event webpages</p>
+                        <p class="projectRole">Project Leader, Web Designer, Photographer</p>
+                        <a class="btn" href="http://saintjameswindsor.com/" target="_blank">Visit the website</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +205,10 @@
             </div>
         </footer>
 		<!-- Compiled and minified JavaScript -->
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+        <!-- Slick slider JavaScript -->
+        <script src="js/slick.min.js"></script>
+        <!-- Main custom JavaScript -->
 		<script src="js/main.js"></script>
     </body>
 </html>

@@ -9,9 +9,13 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 		
 		<!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/reset.css" />
+        <!-- Vendor styling -->
+        <link rel="stylesheet" href="css/vendor/font-awesome/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="css/vendor/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="css/vendor/slick/slick-theme.css"/>
+        <!-- Main home styling -->
+        <link rel="stylesheet" href="css/home.css" />
     </head>
     <body>
         <div id="homeSection">
@@ -28,11 +32,15 @@
                             <li class="navList">
                                 <ul>
                                     <li>
+                                        <a href="#aboutSection" class="hvr-underline-reveal">About</a>
+                                    </li>
+                                    <li>
                                         <a href="#workSection" class="hvr-underline-reveal">Work</a>
                                     </li>
                                     <li>
                                         <a href="#contactSection" class="hvr-underline-reveal">Contact</a>
                                     </li>
+                                    
                                 </ul>
                             </li>
                             <!--
@@ -95,6 +103,8 @@
             </aside>
 -->
 		</div>
+        <div id="aboutSection">
+        </div>
 		<div id="workSection">
             <h3>work.</h3>
             <div class="workCatalog">
@@ -115,6 +125,15 @@
                             <p class="projectRole">Back-End Programmer, Web Designer</p>
                             <a class="btn" href="https://php.scweb.ca/~jamsproject/willabeesproject/public/" target="_blank">Visit the website</a>
                         </div>
+                </div>
+                <div class="workBlock">
+                    <img src="images/contactImage.jpg" alt="saint james windsor image" />
+                    <div class="workBlockInfo">
+                        <h4>Information Technology Club</h4>
+                        <p>Designed and developed event webpages</p>
+                        <p class="projectRole">Project Leader, Web Designer, Photographer</p>
+                        <a class="btn" href="http://saintjameswindsor.com/" target="_blank">Visit the website</a>
+                    </div>
                 </div>
             </div>
 <!--
@@ -186,7 +205,10 @@
             </div>
         </footer>
 		<!-- Compiled and minified JavaScript -->
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+        <!-- Slick slider JavaScript -->
+        <script src="js/slick.min.js"></script>
+        <!-- Main custom JavaScript -->
 		<script src="js/main.js"></script>
     </body>
 </html>

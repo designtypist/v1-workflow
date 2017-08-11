@@ -48,3 +48,22 @@
       background: #fff;
       border-color: #0094BC;
 }
+
+/* slick slider button */
+.slickBtn {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+	-ms-transform: translate(0,-50%);
+	transform: translate(0,-50%);
+    cursor: pointer;
+    
+    &.fa-chevron-right{
+        right: -45px;
+    }
+    &.fa-chevron-left{
+        left: -45px;
+    }
+}
