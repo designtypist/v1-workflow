@@ -41,7 +41,7 @@ gulp.task('sass', () => {
 //.pipe(changed(config.app + 'assets/styles', {extension: '.css'}))
 
 gulp.task('images', () => {
-	gulp.src('src/images/*.{png,gif,jpg}')
+	gulp.src('src/images/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/images'));
 });

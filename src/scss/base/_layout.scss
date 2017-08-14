@@ -210,6 +210,20 @@
                 margin: 25px 0 0 0;
                 text-transform: uppercase;
             }
+            p{
+                color: $white-colour;
+                font-size: 20px;
+                line-height: 1.5;
+                margin: 25px auto;
+                width: 60%;
+                
+                a{
+                    color: $light-grey-colour;
+                    &:hover{
+                        color: $secondary-colour
+                    }
+                }
+            }
 		}
         
         
@@ -217,7 +231,7 @@
         /* Mobile devices styling */
         @media only screen  and (max-width : $break-mobile) {
             .top-half{
-                height: 80%;
+                height: 40%;
                 background-size: 100% 100%;
                 h1 {
                     font-size: 48px;
@@ -225,25 +239,46 @@
                 }
             }
             .bottom-half{
-                height: 20%;
+                height: 60%;
                 h2 {
                     font-size: 36px;
+                }
+                p{
+                    width: 80%;
+                    text-align: left;
                 }
             }
         }
 	}
 }
 
+#aboutSection{
+    margin: 50px auto;
+    width: 85%;
+
+    .aboutIntro{
+        p{
+            font-size: 24px;
+            margin: 25px 0;
+        }
+    }
+    .aboutCatalog{
+        
+        h4{
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+    }
+}
+
 #workSection{
     margin: 50px auto;
     width: 85%;
-    
-    h3{
-        margin: 0;
-    }
-    
-    .workCatalog{
+
+    .pastWorkCatalog, .currentWorkCatalog{
         margin: 25px 0;
+
         .workBlock{
             img{
                 object-fit: cover;
@@ -271,6 +306,8 @@
             }
         }
     }
+
+    
     
     /* Mobile devices styling */
     @media only screen  and (max-width : $break-mobile) {
@@ -303,14 +340,9 @@ footer#contactSection {
     
     h3{
         color: white;
-        font-size: 32px;
-        margin: 0;
     }
     
     .contactContainer{
-        margin: 25px 0;
-        
-        //temp styling
         p {
             margin-bottom: 20px;
             a {
@@ -333,7 +365,6 @@ footer#contactSection {
                 height: 150px;
             }
         }
-        
         
         .contactContent{
             display: flex;
@@ -382,10 +413,11 @@ footer#contactSection {
         }
     }
     .socMedia{
+        margin-top: 25px;
         align-self: center;
     }
     p.copyright{
         align-self: center;
-        margin: 15px 0;
+        margin: 25px 0;
     }
 }

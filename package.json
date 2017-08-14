@@ -1,7 +1,7 @@
 {
   "name": "designtypist",
   "version": "1.0.0",
-  "description": "",
+  "description": "designtypist web portfolio",
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.1"
@@ -20,6 +20,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "designtypist",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designtypist/designtypist_frontend.git"
+  },
+  "keywords": [
+    "designtypist",
+    "portfolio",
+    "web"
+  ],
+  "bugs": {
+    "url": "https://github.com/designtypist/designtypist_frontend/issues"
+  },
+  "homepage": "https://github.com/designtypist/designtypist_frontend#readme"
 }

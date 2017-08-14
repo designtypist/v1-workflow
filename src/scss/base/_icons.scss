@@ -36,6 +36,20 @@
 }
 
 /* linkedin button class*/
+.githubBtn{
+    background: #000;
+}
+.githubBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09b"; /* add linkedin icon */
+}
+.githubBtn:hover{
+      color: #000;
+      background: #fff;
+      border-color: #000;
+}
+
+/* linkedin button class*/
 .linkedinBtn{
     background: #0094BC;
 }
