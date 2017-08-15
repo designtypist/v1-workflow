@@ -1,5 +1,3 @@
-
-
 //social media styling
 .socMedia{
     ul{
@@ -217,12 +215,7 @@
                 margin: 25px auto;
                 width: 60%;
                 
-                a{
-                    color: $light-grey-colour;
-                    &:hover{
-                        color: $secondary-colour
-                    }
-                }
+                
             }
 		}
         
@@ -256,9 +249,12 @@
     margin: 50px auto;
     width: 85%;
 
-    .pastWorkCatalog, .currentWorkCatalog{
+    h4{
+        padding-top: 25px;
+    }
+    .workCatalog{
         margin: 25px 0;
-
+        
         .workBlock{
             img{
                 object-fit: cover;
@@ -268,11 +264,11 @@
             .workBlockInfo{
                 margin: 20px 0;
                 
-                h4,p,a{
+                h5,p,a{
                     margin-bottom: 15px;
                 }
                 
-                h4{
+                h5{
                     font-size: 18px;
                     font-weight: normal;
                 }
@@ -394,7 +390,7 @@ footer#contactSection {
         margin-top: 25px;
         align-self: center;
     }
-    p.copyright{
+    p.footerContent{
         align-self: center;
         margin: 25px 0;
     }

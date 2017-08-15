@@ -27,5 +27,10 @@ h4{
     font-size: 24px;
 }
 a{
+    color: $light-grey-colour;
     text-decoration: none;
+
+    &:hover{
+        color: $secondary-colour
+    }
 }
