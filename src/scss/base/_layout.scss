@@ -214,8 +214,6 @@
                 line-height: 1.5;
                 margin: 25px auto;
                 width: 60%;
-                
-                
             }
 		}
         
@@ -251,6 +249,7 @@
 
     h4{
         padding-top: 25px;
+        text-transform: uppercase;
     }
     .workCatalog{
         margin: 25px 0;
@@ -262,22 +261,15 @@
                 width: 100%;
             }
             .workBlockInfo{
-                margin: 20px 0;
-                
-                h5,p,a{
-                    margin-bottom: 15px;
-                }
-                
-                h5{
-                    font-size: 18px;
-                    font-weight: normal;
-                }
+                margin: 25px 0;
                 p{
                     font-size: 16px;
                     line-height: 1.5;
+                    margin-bottom: 5px;
                 }
                 p.projectRole{
                     color: $light-grey-colour;
+                    margin-bottom: 15px;
                 }
             }
         }
