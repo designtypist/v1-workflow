@@ -252,26 +252,6 @@
 	}
 }
 
-#aboutSection{
-    margin: 50px auto;
-    width: 85%;
-
-    .aboutIntro{
-        p{
-            font-size: 24px;
-            margin: 25px 0;
-        }
-    }
-    .aboutCatalog{
-        
-        h4{
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-        
-    }
-}
-
 #workSection{
     margin: 50px auto;
     width: 85%;
@@ -307,8 +287,6 @@
         }
     }
 
-    
-    
     /* Mobile devices styling */
     @media only screen  and (max-width : $break-mobile) {
         .workCatalog{
