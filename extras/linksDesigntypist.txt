@@ -1,8 +1,0 @@
-	//https://codepen.io/vpdemo/pen/gbvprR
-	//https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-	//https://appico.com/#/
-	//https://codepen.io/noahblon/post/a-practical-guide-to-flexbox-understanding-space-between-the-unsung-hero
-	
-	//http://www.sketchingwithcss.com/samplechapter/cheatsheet.html
-	//set height based on window height
-	//https://j.eremy.net/set-element-height-to-viewport/
